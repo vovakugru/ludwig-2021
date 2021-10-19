@@ -1,12 +1,10 @@
 [gd_scene load_steps=3 format=2]
 
-[sub_resource type="StreamTexture" id=2]
-flags = 4
-load_path = "res://.import/tiles.png-f29defd6e309a9af15cb61d2b28e9181.stex"
+[ext_resource path="res://sprites/30bit.png" type="Texture" id=3]
 
 [sub_resource type="TileSet" id=1]
 0/name = "30bit.png 0"
-0/texture = SubResource( 2 )
+0/texture = ExtResource( 3 )
 0/tex_offset = Vector2( 0, 0 )
 0/modulate = Color( 1, 1, 1, 1 )
 0/region = Rect2( 0, 0, 320, 320 )

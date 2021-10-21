@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ventel_with_kill.wav-274a234199c3ff550f1e34c200af4f2e.sample"
+
+[deps]
+
+source_file="res://audio/ventel_with_kill.wav"
+dest_files=[ "res://.import/ventel_with_kill.wav-274a234199c3ff550f1e34c200af4f2e.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

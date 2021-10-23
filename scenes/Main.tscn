@@ -52,7 +52,6 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
 
 [sub_resource type="StreamTexture" id=16]
 flags = 4
-load_path = "res://.import/tiles.png-f29defd6e309a9af15cb61d2b28e9181.stex"
 
 [sub_resource type="TileSet" id=17]
 0/name = "30bit.png 0"

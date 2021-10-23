@@ -24,8 +24,6 @@ var move_dx_abs = 0.0
 var move_dy = 0.0
 var jump_dy = 0.0
 
-var airborne := false
-
 func input_x():
 	var input = 0
 	input += -1 if Input.is_action_pressed("ui_left") else 0
@@ -84,18 +82,15 @@ func set_move_velocity(velocity):
 func _physics_process(delta):
 	move_update_y(delta)
 	match move_update_x():
-		DxMove.FLIP, DxMove.CONTINUE:
-			$Sprite.texture = side
-			$Sprite.flip_h = move_dx_sign < 0
-		DxMove.DAMP:
-			$Sprite.texture = front
+		DxMove.FLIP:
+			$Octo.flip_h = move_dx_sign < 0
 	match jump_update_y():
 		DyMove.PREP:
-			$Sprite.rotation = move_dx_sign * PI / 2
+			$Octo.rotation = move_dx_sign * PI / 2
 		DyMove.JUMP:
 			$JumpSound.play()
 		DyMove.DAMP:
-			$Sprite.rotation = 0
+			$Octo.rotation = 0
 #
 	set_move_velocity(move_and_slide(move_velocity(), Vector2.UP))
 
